@@ -1,0 +1,9 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Cambia a "center" para centrar las tarjetas en la última fila */
+  gap: 30px; /* Espacio entre las tarjetas */
+  margin: 30px 10px; /* Margen lateral de 10px a ambos lados */
+  position: relative;
+  right: 0;
+}

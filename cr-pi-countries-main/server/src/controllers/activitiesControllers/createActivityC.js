@@ -5,7 +5,7 @@ const createActivityC = async (activity)=>{
     if(!name || !difficulty || !duration || !season || !description) throw Error("datos insuficientes para crear la actividad")
     const createdActivity = await Activity.create({name,difficulty,duration,season,description})
     for(let i=0; i<countries.length; i++){
-        Country.findOne({where:{officialName:countries[i]},attributes:["id"]})
+        Country.findOne({where:{commonName:countries[i]},attributes:["id"]})
         .then(({dataValues})=>dataValues.id)
         .then(id => createdActivity.addCountries(id))
     }

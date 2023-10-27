@@ -2,7 +2,9 @@ const {Country,Activity} = require("../../db")
 
 
 const getCountryByIdC = async (id)=>{
-    const country = await Country.findOne({where:{id:id},includes:Activity}).then((country) => country === null? {} : country.dataValues)
+    const country = await Country.findOne({where:{id:id},include:Activity}).then((country) => {
+        return country === null? {} : country.dataValues
+    })
     return country
 }
 

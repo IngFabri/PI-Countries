@@ -1,7 +1,8 @@
-const {Country} = require("../../db")
+const {Country,Activity} = require("../../db")
 
 const getCountriesC = async ()=>{
-    return await Country.findAll()
+    const countries = await Country.findAll({include:Activity})
+    return countries
 }
 
 module.exports = getCountriesC

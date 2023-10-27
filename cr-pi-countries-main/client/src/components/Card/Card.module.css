@@ -1,0 +1,15 @@
+.card {
+    width: calc(19% - 10px); /* Ajustar el ancho */
+    margin-bottom: 20px;
+    padding: 10px; /* Añade un espacio interno */
+    border: 1px solid #ccc; /* Borde con color gris */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    align-items: center;
+    justify-content: center;
+}
+
+.h3{
+  justify-content: center;
+  overflow: hidden;
+}

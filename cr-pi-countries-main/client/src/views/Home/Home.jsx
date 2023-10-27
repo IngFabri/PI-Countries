@@ -1,18 +1,19 @@
-import CardsContainer from "../../components/CardsContainer/CardsContainer"
-import Filters from "../../components/filters/Filters"
-import {useSelector} from "react-redux";
+import CardsContainer from "../../components/CardsContainer/CardsContainer";
+import Filters from "../../components/filters/Filters";
+import style from "./Home.module.css"
 
 const Home = ()=>{
 
-    const PARA_TENER_EN_CUENTA = "Africa, Europe, Oceania, Asia, South America, North America, Antarctica"
-
     return (
-        <div>
+        <div className={style.home}>
+          <div>
             <Filters/>
+          </div>
+          <div>
             <CardsContainer/>
-            {filteredContinents.map(continent => <h3>{continent}</h3>)}
+          </div>
         </div>
-    )
+      )
 }
 
 export default Home;

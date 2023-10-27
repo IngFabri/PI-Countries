@@ -7,10 +7,10 @@ const dataFilter = (data)=>{
         id: cca3,
         commonName: name.common,
         officialName: name.official,
-        image: flags.png,
+        image: [flags.png, flags.svg],
         continent: continents[0],
-        capital: capital === undefined? "No posee": capital[0],
-        subregion: subregion === undefined? "No especificado" : subregion,
+        capital: capital === undefined? "Unknown": capital[0],
+        subregion: subregion === undefined? "Unknown" : subregion,
         area: area,
         population:population
     }))

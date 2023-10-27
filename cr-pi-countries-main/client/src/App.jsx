@@ -4,17 +4,18 @@ import Landing from "./views/Landing/Landing";
 import NavBar from "./components/NavBar/NavBar";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import {useDispatch} from "react-redux";
-import { getCountries } from "./redux/actions.js";
+import { useDispatch } from "react-redux";
+import { getCountries,getActivities } from "./redux/actions.js";
 
 function App() {
 
     const location = useLocation()
     const dispatch = useDispatch()
-
+    
     useEffect(()=>{
         dispatch(getCountries())
-    })
+        dispatch(getActivities())
+    },[])
 
     return (
         <div>
