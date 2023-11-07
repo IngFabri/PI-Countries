@@ -1,7 +1,28 @@
 .landingContainer {
+    background-image: url("https://wallpapers.com/images/hd/4k-earth-blue-sunrise-mytv6wwpw580w5lh.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-  }
+}
+
+.title{
+  color: rgb(255, 255, 255);
+  /* text-shadow: 300px white; */
+}
+
+.boton{
+  color: white;
+  scale: 2;
+  background-color: rgb(96, 228, 228);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20%;
+}
+
+.text{
+  color: white;
+}
